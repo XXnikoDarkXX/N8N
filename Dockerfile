@@ -4,7 +4,9 @@ ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin123
 
-ENV WEBHOOK_TUNNEL_URL=https://<tu-dominio-render>.onrender.com
+ENV WEBHOOK_TUNNEL_URL=https://n8n-qvbf.onrender.com
 ENV N8N_HOST=0.0.0.0
-ENV N8N_PORT=10000
+# Quita N8N_PORT para que tome el puerto de PORT
+# ENV N8N_PORT=10000
+
 EXPOSE 10000
