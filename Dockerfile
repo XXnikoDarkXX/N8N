@@ -6,7 +6,9 @@ ENV N8N_BASIC_AUTH_PASSWORD=admin123
 
 ENV WEBHOOK_TUNNEL_URL=https://n8n-qvbf.onrender.com
 ENV N8N_HOST=0.0.0.0
-# Quita N8N_PORT para que tome el puerto de PORT
-# ENV N8N_PORT=10000
+ENV N8N_PORT=5678
 
-EXPOSE 10000
+EXPOSE 5678
+
+# Por defecto el contenedor ya usa el entrypoint para ejecutar n8n,
+# no necesitas CMD ni ENTRYPOINT extra.
